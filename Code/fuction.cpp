@@ -31,15 +31,33 @@ int change(int a){
     return a;
 }
 
+int faktorial(int n){
+    if(n == 0){
+        return 1;
+    }else{
+        return n * faktorial(n -1);
+    }
+}
+
+
+int sum(int a, int b){
+    return a+b;
+}
+
+int distance(int c, int d){
+    return sum(c,d);
+}
+
+
+int parameterDek(int a=1, int c=3){
+    return a+c;
+}
 
 int main(int argc, char const *argv[]){
-    int nilaifaktor = 10;
-    
-    for(int i= 10-1; i<1;i--){
-        cout<<nilaifaktor <<" x "<<i<<" = "<<nilaifaktor * i<<endl;
-    }
+    cout<<parameterDek();
     return 0;
 }
+
 
 int kurang(int a, int b){
     return a-b;
